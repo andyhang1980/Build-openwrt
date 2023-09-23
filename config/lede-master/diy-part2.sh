@@ -30,7 +30,11 @@ sed -i 's/192.168.1.1/192.168.0.1/g' package/base-files/files/bin/config_generat
 #
 # Add luci-app-amlogic
 # svn co https://github.com/ophub/luci-app-amlogic/trunk/luci-app-amlogic package/luci-app-amlogic
-
+svn co https://github.com/ysx88/openwrt-packages/tree/ae52d6ac377f7a65702e25a19957a3bd85a6cfac/luci-app-mosdns package/luci-app-mosdns
+svn co https://github.com/ysx88/openwrt-packages/tree/ae52d6ac377f7a65702e25a19957a3bd85a6cfac/luci-app-passwall package/luci-app-passwall
+svn co https://github.com/ysx88/openwrt-packages/tree/ae52d6ac377f7a65702e25a19957a3bd85a6cfac/luci-app-store package/luci-app-store
+svn co  https://github.com/ysx88/openwrt-packages/tree/ae52d6ac377f7a65702e25a19957a3bd85a6cfac/helloworld package/helloworld
+svn co https://github.com/ysx88/openwrt-packages/tree/ae52d6ac377f7a65702e25a19957a3bd85a6cfac/luci-app-clash package/luci-app-clash
 # Fix runc version error
 # rm -rf ./feeds/packages/utils/runc/Makefile
 # svn export https://github.com/openwrt/packages/trunk/utils/runc/Makefile ./feeds/packages/utils/runc/Makefile
